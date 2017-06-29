@@ -1,0 +1,95 @@
+/*HOME.HTML*/
+/*/////////////////////////////////////////////////////////*/
+
+/*Body tag*/
+body{
+	background-color: #ddd6c6;
+}
+
+/*Jumbotron*/
+#jumbotron{
+	background-image: url(https://wallpaperscraft.com/image/city_cafe_chair_table_blur_bokeh_59087_2560x1080.jpg);
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+/*Title*/
+#title{
+	font-family: 'Vast Shadow', cursive;
+	text-shadow: 2px 2px white;
+}
+
+/*Sub Titles*/
+#subTitle{
+	font-family: 'Kite One', sans-serif;
+	text-shadow: 2px 2px white;
+}
+
+/*Go To Survey Button*/
+#goToSurvey{
+	background-image: none;
+	background-color: #e4ddcb;
+	border-color: #333333;
+	font-family: 'Kite One', sans-serif;
+	font-size: 22px;
+	color: #333333;
+	text-shadow: 2px 2px white;
+}
+
+/*Footer Links*/
+.footerLinks{
+	font-family: 'Vast Shadow', cursive;
+	color: #333333;
+}
+
+/*SURVEY.HTML*/
+/*/////////////////////////////////////////////////////////*/
+
+/*Survey Title*/
+#surveyTitle{
+	font-family: 'Vast Shadow', cursive;
+	text-shadow: 2px 2px white;
+}
+
+/*All the Sub Titles*/
+h3 {
+	font-family: 'Vast Shadow', cursive;
+	text-shadow: 2px 2px white;
+}
+
+/*All the Questions*/
+h4{
+	font-family: 'Kite One', sans-serif;
+	text-shadow: 2px 2px white;
+}
+
+/*Submit Button*/
+#submit{
+	background-image: none;
+	background-color: #fffaed;
+	border-color: #333333;
+	font-family: 'Kite One', sans-serif;
+	font-size: 22px;
+	color: #333333;
+	text-shadow: 2px 2px white;
+}
+
+/*Drop Down Menu Options*/
+option {
+	background-color: #e4ddcb;
+	border-color: #333333;
+	font-family: 'Kite One', sans-serif;
+	font-size: 14px;
+	color: #333333;
+	text-shadow: 2px 2px white;
+}
+
+/*Drop Down Menu Default*/
+.questions {
+	background-color: #fffaed;
+	border-color: #333333;
+	font-family: 'Kite One', sans-serif;
+	font-size: 14px;
+	color: #333333;
+	text-shadow: 2px 2px white;
+}
