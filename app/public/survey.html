@@ -316,6 +316,7 @@ $("#submit").on("click", function(event){
       postRequest();
   }
 
+
   function postRequest(){
 		$.post("/api/friends", newFriend, function(data){
 			if (data || data === 0) {
