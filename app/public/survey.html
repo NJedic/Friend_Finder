@@ -262,7 +262,7 @@
       <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h2 class="modal-title"><strong> <center> Best Match </center> </strong></h2>
+            <h2 class="modal-title"><strong> <center> Your New Best Friend: </center> </strong></h2>
         </div>
         <div class="modal-body">
             <center>
@@ -279,9 +279,14 @@
 
 
 <script type="text/javascript">
+
+// On the Submit button click...
 $("#submit").on("click", function(event){
+	
+	// Prevents Page Reset
 	event.preventDefault();
 
+	// Capturing User Input Data and Storing it in a variable
 	var newFriend = {
 		name: $("#name").val().trim(),
 		photo: $("#photo").val().trim(),
@@ -299,8 +304,8 @@ $("#submit").on("click", function(event){
 		]
 	};
 
-	console.log(newFriend);
-	console.log(newFriend.scores)
+		// console.log(newFriend);
+		// console.log(newFriend.scores)
 
 //validate if all questions were answered
   for (i = 0; i < newFriend.scores.length; i++) {
@@ -316,9 +321,11 @@ $("#submit").on("click", function(event){
       postRequest();
   }
 
-
+  // Function to handle the posting of a new friend!
   function postRequest(){
+  	// Post to url /api/friends
 		$.post("/api/friends", newFriend, function(data){
+			
 			if (data || data === 0) {
         alert("Please wait while we calculate your new Best Friend!");
         console.log(data);
@@ -326,31 +333,35 @@ $("#submit").on("click", function(event){
     	else {
         alert("Oh No! Something went wrong! Better try again!");
     	}
-    
+    	// Resetting Input fields to empty
     	$("#name").val("");
     	$("#photo").val("");
+
+    	// Calling the findAFriend function and passing the data result from this function through it
     	findAFriend(data);
 		})
 	}
 });
 
 function findAFriend(match){
-  //get the location of the root page.
+  // Set a variable to represent the location of the root page.
   var currentURL = window.location.origin;
-  // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+  // AJAX call
   $.ajax({
     url: currentURL + "/api/friends",
     method: "GET"
 	}).done(function(friendsData) {
-    console.log("------------------------------------");
-    console.log("URL: " + currentURL + "/api/friends");
-    console.log("------------------------------------");
-    console.log(friendsData[match]);
-    console.log("------------------------------------");
+	    // console.log(currentURL);
+	    // console.log(friendsData[match]);
+	  
     // the best match is the existing friend with the match index
     var bestMatch = friendsData[match];
+
+    // Setting attributes for our Modal
     $("#matchName").html(bestMatch.name);
     $("#matchImg").attr("src", bestMatch.photo);
+    
+    // Calling the modal
     $("#resultsModal").modal("show");
       });
 };

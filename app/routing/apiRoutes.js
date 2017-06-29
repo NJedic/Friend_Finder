@@ -15,28 +15,28 @@ module.exports = function(app){
 		friends.push(req.body);
 		
 
-//compatibility logic to compare the existing friends for the best match
+// Compatibility logic to compare the existing friends for the best match
   var comparisonArray = [];
   var newFriendScores= req.body.scores;
   
-  //loop through each exising friend to compare scores
+  // Loop through each exising friend to compare scores
   for (i = 0;i < friends.length; i++) {
     var scores = friends[i].scores;
 
-    //loop through each score for the friend in this position    
+    // Loop through each score for the friend in this position    
     var comparisonArray = [];
     for (j = 0; j < scores.length; j++) {
-      //compare the variance for each score compared to the new friend's score
+      // Compare the variance for each score compared to the new friend's score
       var comparison = Math.abs(scores[j] - newFriendScores[j]);
       comparisonArray.push(comparison);
     }
     
-    //sum each value in the comparison array and push the total to the comparisonArray
+    // Sum each value in the comparison array and push the total to the comparisonArray
     var summed = eval(comparisonArray.join('+'));
     comparisonArray.push(summed);
   }
   
-  //loop through the comparisonArray and determine which value is the lowest, therefore best match
+  // Loop through the comparisonArray and determine which value is the lowest, therefore best match
     console.log("comparisonArray: " + comparisonArray);
     var bestMatch = comparisonArray.indexOf(Math.min.apply(null, comparisonArray));
     console.log("bestMatch: " + bestMatch);   
