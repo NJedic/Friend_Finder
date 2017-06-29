@@ -13,7 +13,7 @@ var app = express();
 var PORT = process.env.PORT || 3500;
 
 // Serve static content for the app from the "public" directory
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public/css"));
 
 // BodyParser standard code
 app.use(bodyParser.json());
