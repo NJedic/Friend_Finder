@@ -93,3 +93,23 @@ option {
 	color: #333333;
 	text-shadow: 2px 2px white;
 }
+
+/*Modal*/
+#Modal{
+	background-color: #ddd6c6;
+}
+/*Headers*/
+h2{
+	font-family: 'Kite One', sans-serif;
+	text-shadow: 2px 2px white;
+}
+/*Button*/
+#close{
+	background-image: none;
+	background-color: #fffaed;
+	border-color: #333333;
+	font-family: 'Kite One', sans-serif;
+	font-size: 22px;
+	color: #333333;
+	text-shadow: 2px 2px white;
+}

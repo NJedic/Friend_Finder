@@ -24,7 +24,6 @@ module.exports = function(app){
     var scores = friends[i].scores;
 
     // Loop through each score for the friend in this position    
-    var comparisonArray = [];
     for (j = 0; j < scores.length; j++) {
       // Compare the variance for each score compared to the new friend's score
       var comparison = Math.abs(scores[j] - newFriendScores[j]);

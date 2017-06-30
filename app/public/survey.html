@@ -270,7 +270,7 @@
             <center> <img id="matchImg" src="" width="650px" alt=""> </center>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -304,8 +304,8 @@ $("#submit").on("click", function(event){
 		]
 	};
 
-		// console.log(newFriend);
-		// console.log(newFriend.scores)
+	console.log(newFriend);
+	console.log(newFriend.scores)
 
 //validate if all questions were answered
   for (i = 0; i < newFriend.scores.length; i++) {
@@ -351,16 +351,17 @@ function findAFriend(match){
     url: currentURL + "/api/friends",
     method: "GET"
 	}).done(function(friendsData) {
-	    // console.log(currentURL);
-	    // console.log(friendsData[match]);
-	  
+    console.log("------------------------------------");
+    console.log("URL: " + currentURL + "/api/friends");
+    console.log("------------------------------------");
+    console.log(friendsData[match]);
+    console.log("------------------------------------");
     // the best match is the existing friend with the match index
     var bestMatch = friendsData[match];
 
     // Setting attributes for our Modal
     $("#matchName").html(bestMatch.name);
     $("#matchImg").attr("src", bestMatch.photo);
-    
     // Calling the modal
     $("#resultsModal").modal("show");
       });
