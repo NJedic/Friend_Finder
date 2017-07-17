@@ -14,4 +14,4 @@ After answering some basic personality questions, Friend Finder matches you with
 ![high-five] [highFiveGif]
 
 [here!]: https://powerful-inlet-30565.herokuapp.com/
-[highFiveGif]: https://giphy.com/gifs/OcZp0maz6ALok/html5
+[highFiveGif]: https://media.giphy.com/media/OcZp0maz6ALok/giphy.gif
