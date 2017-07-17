@@ -11,7 +11,6 @@ After answering some basic personality questions, Friend Finder matches you with
 * Answer a few basic questions about yourself!
 
 * Meet your new best friend! 
-![high-five] [highFiveGif]
+![high-five](https://media.giphy.com/media/OcZp0maz6ALok/giphy.gif)
 
 [here!]: https://powerful-inlet-30565.herokuapp.com/
-[highFiveGif]: https://media.giphy.com/media/OcZp0maz6ALok/giphy.gif
