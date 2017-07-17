@@ -6,11 +6,13 @@ After answering some basic personality questions, Friend Finder matches you with
 
 ## Getting Started
 
-* Launch the application [here!] 
+1. Launch the application [here!] 
 
-* Answer a few basic questions about yourself!
+2. Answer a few basic questions about yourself!
 
-* Meet your new best friend! 
+3. Meet your new best friend! 
+
+
 ![high-five](https://media.giphy.com/media/OcZp0maz6ALok/giphy.gif)
 
 [here!]: https://powerful-inlet-30565.herokuapp.com/
