@@ -34,7 +34,7 @@ After answering some basic personality questions, Friend Finder matches you with
 
 Click on the "Take the Survey" Button to begin! 
 (There are also links to this repo as well as a JSON file listing all the possible matches).
-![Landing Page](/public/images/friendFinder1.jpg)
+![Landing Page](../public/images/friendFinder1.jpg)
 
 * Survey:
 
