@@ -34,17 +34,17 @@ After answering some basic personality questions, Friend Finder matches you with
 
 Click on the "Take the Survey" Button to begin! 
 (There are also links to this repo as well as a JSON file listing all the possible matches).
-![Landing Page](../public/images/friendFinder1.jpg)
+![Landing Page](/app/public/images/friendFinder1.jpg)
 
 * Survey:
 
 Fill in the "Name" and "Link to Photo Image" fields (both are required) and select your answers to the following 10 Questions.
-![Top of Survey](/public/images/friendFinder2.jpg)
+![Top of Survey](/app/public/images/friendFinder2.jpg)
 
 When you're finished, hit the "Submit Your Survey" Button!
-![Submit Button](/public/images/friendFinder3.jpg)
+![Submit Button](/app/public/images/friendFinder3.jpg)
 
 Upon submission of the form, the app will calculate your best possible match and pop it up in a modal!
-![New Best Friend](/public/images/friendFinder4.jpg)
+![New Best Friend](/app/public/images/friendFinder4.jpg)
 
 [here!]: https://powerful-inlet-30565.herokuapp.com/
